@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selamat Ulang Tahun Yusvita</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #fdf0f5;
+      color: #333;
+      padding: 20px;
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    #photo-section {
+      display: none;
+    }
+
+    button {
+      padding: 15px 25px;
+      background-color: #f06292;
+      border: none;
+      color: white;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ec407a;
+    }
+
+    img {
+      max-width: 90%;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .message {
+      font-size: 20px;
+      margin-top: 20px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" id="main-section">
+    <h1>Selamat Ulang Tahun, My Love 💖</h1>
+    <p>Usia ke-24 adalah awal dari banyak kebahagiaan yang menanti.</p>
+    <button onclick="showPhoto()">Lihat Kenangan & Doa 🎁</button>
+  </div>
+
+  <div class="container" id="photo-section">
+    <h2>Doa untuk Yusvita Kusuma Wardani 🌸</h2>
+    <img src="yusvita.jpg" alt="Yusvita Kusuma Wardani" />
+    <div class="message">
+      Semoga Yusvita selalu dalam lindungan Allah, diberi kebahagiaan tanpa akhir, dan sukses di setiap langkahnya. Aamiin 🤲
+    </div>
+  </div>
+
+  <audio id="birthdaySong" src="happy-birthday.mp3" preload="auto"></audio>
+
+  <script>
+    function showPhoto() {
+      document.getElementById("main-section").style.display = "none";
+      document.getElementById("photo-section").style.display = "block";
+      document.getElementById("birthdaySong").play();
+    }
+  </script>
+
+</body>
+</html>
